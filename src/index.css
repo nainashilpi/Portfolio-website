@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.4), 0 0 20px rgba(168, 85, 247, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.8), 0 0 30px rgba(168, 85, 247, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.4), 0 0 20px rgba(168, 85, 247, 0.2);
+  }
+}
+
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.animate-fadeInOut {
+  animation: fadeInOut 3s ease-in-out infinite;
+}
+
+
+/* 💜👇👇👇 NEWLY ADDED FOR TYPING EFFECT 👇👇👇💜 */
+.typing-text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #a855f7; /* Purple blink */
+  animation: typing 3.5s steps(25) infinite, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 20ch;
+  }
+  100% {
+    width: 0ch;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #a855f7;
+  }
+}
+
+
+
+
+
+
+
+
+
+
