@@ -49,7 +49,7 @@ function Navbar() {
 
       {/* Mobile Nav Dropdown */}
       {menuOpen && (
-<ul className="md:hidden fixed top-0 right-0 min-h-screen w-2/3 bg-[#ffffff0a] backdrop-blur-lg border-l border-[#ffffff22] shadow-xl transition-transform duration-500 ease-in-out transform z-50 px-6 py-20 space-y-6 text-white text-sm font-medium ${menuOpen ? 'translate-x-0' : 'translate-x-full'}">
+<ul className={`md:hidden fixed top-0 right-0 min-h-screen w-2/3 bg-[#ffffff0a] backdrop-blur-lg border-l border-[#ffffff22] shadow-xl transition-transform duration-500 ease-in-out transform z-50 px-6 py-20 space-y-6 text-white text-sm font-medium ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
   {navItems.map((item) => (
     <li
       key={item.id}
