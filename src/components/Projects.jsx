@@ -37,7 +37,7 @@ const projects = [
     tech: "ReactJS, Tailwind CSS",
     image: proj1,
     link: "https://github.com/nainashilpi/Portfolio",
-    view: "https://naina-portfolio.vercel.app",
+    view: "https://portfolio-website-woad-seven-44.vercel.app/",
   },
   {
     title: "Image Gallery",
